@@ -20,6 +20,4 @@ install_postgresql() {
   sudo /etc/init.d/postgresql restart
 }
 
-sudo apt update  
-
 install_postgresql 
