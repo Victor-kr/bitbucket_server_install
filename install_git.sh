@@ -24,6 +24,4 @@ install_git() {
   git --version
 }
 
-sudo apt update 
-
 install_git
