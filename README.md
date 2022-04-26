@@ -6,15 +6,11 @@
   $ sudo apt update
   $ sudo apt upgrade -y
   $ sudo chmod 777 *
-  $ ./install_java.sh 
-  $ ./install_git.sh
-  $ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-  $ echo "umask 027" | sudo tee -a /etc/profile  
-  $ echo "JAVA_HOME=/opt/java/jdk_11" | sudo tee -a /etc/environment
-  $ echo "JRE_HOME=/opt/java/jdk_11" | sudo tee -a /etc/environment
-  $ echo "PATH=$PATH:/opt/java/jdk_11/bin:/usr/local/git/bin" | sudo tee -a /etc/environment
+  $ ./setenv.sh
   $ source /etc/environment
   $ source /etc/profile
+  $ ./install_java.sh 
+  $ ./install_git.sh 
   $ ./install_bbk.sh
   $ ./install_psql.sh
 ``` 
