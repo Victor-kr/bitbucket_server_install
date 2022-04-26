@@ -17,8 +17,8 @@ install_bitbucket() {
   BITBUCKET_INSTALL_DIR=/opt/atlassian/bitbucket
   DOWNLOAD_URL=https://product-downloads.atlassian.com/software/stash/downloads/atlassian-bitbucket-7.21.0.tar.gz 
 
-  # Depnedency packages
-  apt-get install -y --no-install-recommends tzdata ca-certificates fontconfig locales wget ufw && \
+  # Depnedency packages 
+  sudo apt-get install -y --no-install-recommends tzdata ca-certificates fontconfig locales wget ufw && \
   echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
   locale-gen en_US.UTF-8   
   
