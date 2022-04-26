@@ -14,7 +14,7 @@ install_postgresql() {
   sudo -u postgres -- psql --command "CREATE DATABASE gitdb WITH ENCODING='UTF8' OWNER=gituser CONNECTION LIMIT=-1;" && \
   sudo -u postgres -- psql --command "GRANT ALL PRIVILEGES ON DATABASE gitdb TO gituser;"
 
-  sudo -u postgres -- sed -i s/"#listen_addresses = 'localhost'"/"listen_addresses = ''"/g /etc/postgresql/11/main/postgresql.conf
+  sudo -u postgres -- sed -i s/"#listen_addresses = 'localhost'"/"listen_addresses = '*'"/g /etc/postgresql/11/main/postgresql.conf
   sudo -u postgres -- sed -i s/"local   all             all                                     peer"/"local   all             all                                     trust"/g /etc/postgresql/11/main/pg_hba.conf 
   
   sudo /etc/init.d/postgresql restart
