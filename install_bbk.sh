@@ -42,6 +42,9 @@ install_bitbucket() {
   # Environments
   sudo sed -i s@"    BITBUCKET_HOME="@"    BITBUCKET_HOME=${BITBUCKET_HOME}"@g ${BITBUCKET_INSTALL_DIR}/bin/set-bitbucket-home.sh && \
   sudo sed -i s@"^# umask 0027"@"umask 0027"@g ${BITBUCKET_INSTALL_DIR}/bin/_start-webapp.sh
+  sudo sed -i s@"^#JVM_SUPPORT_RECOMMENDED_ARGS="@"JVM_SUPPORT_RECOMMENDED_ARGS=-Dcluster.node.name=Node1"@g ${BITBUCKET_INSTALL_DIR}/bin/_start-webapp.sh
+  sudo sed -i s@"    JVM_MINIMUM_MEMORY=512m"@"    JVM_MINIMUM_MEMORY=3g"@g ${BITBUCKET_INSTALL_DIR}/bin/_start-webapp.sh
+  sudo sed -i s@"    JVM_MAXIMUM_MEMORY=1g"@"    JVM_MAXIMUM_MEMORY=3g"@g ${BITBUCKET_INSTALL_DIR}/bin/_start-webapp.sh
 
   # Permissions
   sudo groupadd --gid ${RUN_GID} ${RUN_GROUP} && \
