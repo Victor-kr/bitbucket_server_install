@@ -11,8 +11,8 @@
   $ source /etc/profile
   $ ./install_java.sh 
   $ ./install_git.sh 
-  $ ./install_bbk.sh
   $ ./install_psql.sh
+  $ ./install_bbk.sh
 ``` 
 
 ## Step 2 > Bitbucket 설치 및 구동
