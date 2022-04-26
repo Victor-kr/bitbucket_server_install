@@ -10,4 +10,5 @@
   $ source /etc/environment
   $ source /etc/profile
   $ ./install_bbk.sh
+  $ ./install_psql.sh
 ```
