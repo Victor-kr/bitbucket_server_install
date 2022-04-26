@@ -18,12 +18,12 @@
 
 ## Step 2 > Bitbucket 설치 및 구동
 
-Database Type : PostgreSQL
-Hostname : localhost 
-Port : 5432 
-Database name : gitdb
-Database username : gituser
-Database password : gitpass
+ - Database Type : PostgreSQL
+ - Hostname : localhost 
+ - Port : 5432 
+ - Database name : gitdb
+ - Database username : gituser
+ - Database password : gitpass
 
 ## Step 3 > 라이선스 
 
