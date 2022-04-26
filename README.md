@@ -3,6 +3,8 @@
 ``` console
   $ git clone https://github.com/kin3303/bitbucket_server_new.git
   $ cd bitbucket_server_new/
+  $ sudo apt update
+  $ sudo apt upgrade -y
   $ sudo chmod 777 *
   $ ./install_java.sh 
   $ ./install_git.sh
