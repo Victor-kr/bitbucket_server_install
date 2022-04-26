@@ -22,18 +22,15 @@ install_bitbucket() {
   echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
   locale-gen en_US.UTF-8   
   
-
   # GIT depnedency packages 
   sudo ufw allow 7990/tcp
   sudo ufw allow 7999/tcp
-
 
   # Preparing Home & Install Directory
   sudo rm -rf  ${BITBUCKET_INSTALL_DIR} && \
   sudo rm -rf ${BITBUCKET_HOME} && \
   sudo mkdir -p  ${BITBUCKET_INSTALL_DIR} && \
   sudo mkdir -p ${BITBUCKET_HOME}
-
 
   # Install Bitbucket 
   sudo wget ${DOWNLOAD_URL} -O ${BITBUCKET_INSTALL_DIR}/bitbucket.tar.gz && \
@@ -53,7 +50,6 @@ install_bitbucket() {
   sudo chown -R ${RUN_USER}:${RUN_GROUP} ${BITBUCKET_INSTALL_DIR}/ && \
   sudo chown -R ${RUN_USER}:${RUN_GROUP} ${BITBUCKET_HOME} 
     
-  
   # Start Bitbucket Server
   cd ${BITBUCKET_INSTALL_DIR}/bin && \
   sudo -u ${RUN_USER} -- ./start-bitbucket.sh 
