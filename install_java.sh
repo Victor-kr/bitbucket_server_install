@@ -24,6 +24,4 @@ install_java() {
   java -version
 }
 
-sudo apt update
-
 install_java
