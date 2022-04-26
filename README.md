@@ -6,6 +6,8 @@
   $ sudo chmod 777 *
   $ ./install_java.sh 
   $ ./install_git.sh
+  $ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+  $ echo "umask 027" | sudo tee -a /etc/profile 
   $ echo "umask 027" | sudo tee -a /etc/profile 
   $ echo "JAVA_HOME=/opt/java/jdk_11" | sudo tee -a /etc/environment
   $ echo "JRE_HOME=/opt/java/jdk_11" | sudo tee -a /etc/environment
@@ -14,7 +16,7 @@
   $ source /etc/profile
   $ ./install_bbk.sh
   $ ./install_psql.sh
-```
+``` 
 
 ## Step 2 > Bitbucket 설치 및 구동
 
