@@ -8,14 +8,14 @@ install_bitbucket() {
   APPLICATION_MODE=default 
   APP_NAME=bitbucket
   
-  export RELEASE_VERSION=7.21.0
-  export RUN_USER=bitbucket 
-  export RUN_GROUP=bitbucket
-  export RUN_UID=2003
-  export RUN_GID=2003
-  export BITBUCKET_HOME=/var/atlassian/application-data/bitbucket
-  export BITBUCKET_INSTALL_DIR=/opt/atlassian/bitbucket
-  export DOWNLOAD_URL=https://product-downloads.atlassian.com/software/stash/downloads/atlassian-bitbucket-7.21.0.tar.gz 
+  RELEASE_VERSION=7.21.0
+  RUN_USER=bitbucket 
+  RUN_GROUP=bitbucket
+  RUN_UID=2003
+  RUN_GID=2003
+  BITBUCKET_HOME=/var/atlassian/application-data/bitbucket
+  BITBUCKET_INSTALL_DIR=/opt/atlassian/bitbucket
+  DOWNLOAD_URL=https://product-downloads.atlassian.com/software/stash/downloads/atlassian-bitbucket-7.21.0.tar.gz 
 
   # Depnedency packages
   apt-get install -y --no-install-recommends tzdata ca-certificates fontconfig locales wget ufw && \
