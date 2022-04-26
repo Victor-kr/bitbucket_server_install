@@ -62,6 +62,4 @@ install_bitbucket() {
 #Main
 #################################################################
 
-sudo apt update
-
 install_bitbucket
