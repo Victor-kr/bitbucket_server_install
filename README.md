@@ -1,6 +1,9 @@
 ## Bitbucket 서버 설치 스크립트 정리
 
 ``` console
+  $ git clone https://github.com/kin3303/bitbucket_server_new.git
+  $ cd bitbucket_server_new/
+  $ sudo chmod 777 *
   $ ./install_java.sh 
   $ ./install_git.sh
   $ echo "umask 027" | sudo tee -a /etc/profile 
